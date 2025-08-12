@@ -64,6 +64,7 @@ body {
   font-weight: var(--fw-normal);
   line-height: var(--line-height-normal);
   color: var(--White);
+  background-color: var(--Grey-950);
 }
 
 .container {
@@ -129,3 +130,14 @@ span {
   display: inline-block;
 }
 /* ========== Styling layout========== */
+.rate {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rate--card {
+  flex-basis: 380px;
+}
