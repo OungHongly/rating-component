@@ -17,31 +17,42 @@
       rel="stylesheet">
   </head>
   <body>
-
-    <!-- Rating state start -->
-
-    How did we do?
-
-    Please let us know how we did with your support request. All feedback is
-    appreciated
-    to help us improve our offering!
-
-    1 2 3 4 5
-
-    Submit
-
-    <!-- Rating state end -->
+    <section class="rate">
+      <!-- Rating state start -->
+      <div class="rate--card">
+        <img src="./images/icon-star.svg" alt="star-icon">
+        <h3 class="card-heading">How did we do?</h3>
+        <p class="card-content">
+          Please let us know how we did with your support request. All feedback
+          is
+          appreciated
+          to help us improve our offering!
+        </p>
+        <ul class="rating-num">
+          <li class="rate-num" id="rate--1">1</li>
+          <li class="rate-num" id="rate--2">2</li>
+          <li class="rate-num" id="rate--3">3</li>
+          <li class="rate-num" id="rate--4">4</li>
+          <li class="rate-num" id="rate--5">5</li>
+        </ul>
+        <button class="btnSubmit">SUBMIT</button>
+      </div>
+    </section>
+    <!-- Rating state eng -->
 
     <!-- Thank you state start -->
-
-    You selected <!-- Add rating here --> out of 5
-
-    Thank you!
-
-    We appreciate you taking the time to give a rating. If you ever need more
-    support,
-    don’t hesitate to get in touch!
-
+    <div class="rate--card">
+      <img src="./images/illustration-thank-you.svg" alt="thank-image"
+        class="thank-image">
+      <p class="rate-message">You selected <!-- Add rating here --> out of 5</p>
+      <h3 class="card-heading">Thank you!</h3>
+      <p class="card-content">
+        We appreciate you taking the time to give a rating. If you ever need
+        more
+        support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
     <!-- Thank you state end -->
 
     <div class="attribution">
