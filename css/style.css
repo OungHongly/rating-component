@@ -40,6 +40,11 @@
   /* COLOR : Tint / Base / Shade */
   /* Use website: maketintsandshades.com */
   --primary-orange: hsl(25, 97%, 53%);
+  --main-gradient: linear-gradient(
+    115deg,
+    hsl(213, 19%, 18%),
+    hsl(216, 12%, 8%)
+  );
 
   --White: hsl(0, 100%, 100%);
   --Grey-500: hsl(217, 12%, 63%);
@@ -139,5 +144,77 @@ span {
   align-items: center;
 }
 .rate--card {
-  flex-basis: 380px;
+  max-width: 400px;
+  min-height: 400px;
+  background-image: var(--main-gradient);
+  padding: var(--space-lg);
+  border-radius: var(--space-md);
+}
+.rate-star {
+  padding: var(--space-md);
+  background-color: var(--Grey-900);
+  border-radius: 50%;
+  margin-bottom: var(--space-md);
+}
+.card-heading {
+  margin-bottom: var(--space-sm);
+}
+.card-content {
+  color: var(--Grey-500);
+  margin-bottom: var(--space-md);
+}
+.rating-list {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: space-between;
+  text-align: center;
+
+  margin-bottom: var(--space-lg);
+}
+.rate-num {
+  padding: var(--space-sm);
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: var(--Grey-900);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-paragraph);
+}
+.btnSubmit {
+  display: block;
+  background-color: var(--primary-orange);
+  width: 100%;
+  border: none;
+  padding: var(--space-md) var(--space-sm);
+  border-radius: 100px;
+
+  font-family: var(--ff-body);
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+}
+
+/* -==== Thank card ====== */
+.thank-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thank-image {
+  margin-bottom: var(--space-md);
+}
+.rate-message {
+  margin-bottom: var(--space-lg);
+
+  color: var(--primary-orange);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 100px;
+  background-color: var(--Grey-900);
+}
+.thank-card .card-content {
+  margin-bottom: 0;
 }
