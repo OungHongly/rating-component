@@ -138,10 +138,10 @@ span {
 .rate {
   height: 100vh;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .rate--card {
   max-width: 400px;
@@ -149,6 +149,8 @@ span {
   background-image: var(--main-gradient);
   padding: var(--space-lg);
   border-radius: var(--space-md);
+
+  margin: 0 var(--space-md);
 }
 .rate-star {
   padding: var(--space-md);
@@ -218,6 +220,9 @@ span {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  position: absolute;
+  z-index: 10;
 }
 .thank-image {
   margin-bottom: var(--space-md);
